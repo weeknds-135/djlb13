@@ -1,0 +1,2 @@
+import { Button } from './ui/button.jsx';
+export default function CategoryFilter({categories,selected,onSelect}){return <div className="filters" aria-label="Filtrar por categoría"><Button className={selected===null?'active':''} onClick={()=>onSelect(null)}>Todos</Button>{categories.map(c=><Button key={c.id} className={selected===c.id?'active':''} onClick={()=>onSelect(c.id)}>{c.nombre}</Button>)}</div>}

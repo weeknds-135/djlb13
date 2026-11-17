@@ -1,0 +1,2 @@
+import ProductCard from './ProductCard.jsx';
+export default function ProductList({products}){if(!products.length)return <div className="empty">No hay libros en esta categoría por ahora.</div>;return <div className="product-grid">{products.map((p,i)=><ProductCard key={p.id} product={p} index={i}/>)}</div>}

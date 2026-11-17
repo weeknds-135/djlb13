@@ -1,0 +1,2 @@
+import { BookOpen, Search } from 'lucide-react';
+export default function Header(){return <header className="header"><a className="brand" href="#inicio"><span className="brand-icon"><BookOpen size={22}/></span><span>Lima <b>Lectora</b></span></a><nav><a href="#catalogo">Catálogo</a><a href="#nosotros">Nosotros</a></nav><a className="header-cta" href="#catalogo"><Search size={17}/> Explorar libros</a></header>}
